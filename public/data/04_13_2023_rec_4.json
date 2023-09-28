@@ -1,0 +1,11 @@
+{
+  "name": "April13_Rec4",
+  "start_frame": 1,
+  "end_frame": 31,
+  "textures": {
+    "Textured": "texture",
+    "Normalized": "normalized"
+  },
+  "ms_per_frame": 10,
+  "default_camera_pos": [-0.08518, -0.00527, 0.47992]
+}

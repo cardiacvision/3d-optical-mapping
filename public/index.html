@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <title>Heart Recording Viewer</title>
+    
+    
+    
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
+    />
+    <script type="module" crossorigin src="/3d-optical-mapping/assets/main-f394056e.js"></script>
+    <link rel="modulepreload" crossorigin href="/3d-optical-mapping/assets/modulepreload-polyfill-3cfb730f.js">
+    <link rel="stylesheet" href="/3d-optical-mapping/assets/index-fc4aac02.css">
+  </head>
+  <body background="images/background1.png">
+    <header>
+      <div class="pages">UCSF Cardiac Vision Lab</div>
+      <nav id="navigationBar">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li>
+            <a
+              href="https://cardiacvision.ucsf.edu"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Cardiac Vision Lab</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <div id="homePage" class="search-container">
+      <h1>3D Optical Mapping Recordings</h1>
+      <div class="search-row">
+        <input
+          type="text"
+          id="dateInput"
+          class="search-input"
+          placeholder="Date"
+        />
+        <input
+          type="text"
+          id="recInput"
+          class="search-input"
+          placeholder="Recording"
+        />
+        <input
+          type="text"
+          id="speciesInput"
+          class="search-input"
+          placeholder="Species"
+        />
+        <input
+          type="text"
+          id="rhythmInput"
+          class="search-input"
+          placeholder="Rhythm"
+        />
+      </div>
+      <div class="search-table">
+        <table id="dataTable">
+          <thead>
+            <tr>
+              <th>Date</th>
+              <th>Recording</th>
+              <th>Species</th>
+              <th>Rhythm</th>
+              <th>Frames</th>
+              <th>Notes</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </div>
+    <div id="aboutPage" class="about-container">
+      <div style="text-align: center">
+        <h1>Interactive Heart Viewer</h1>
+      </div>
+      <p>
+        This is a landing page for an interactive 3D viewer of UCSF Cardiac
+        Vision Laboratory heart imaging experiments.
+      </p>
+      <div class="example-display">
+        <img src="images/exampledisplay.png" />
+      </div>
+    </div>
+    
+  </body>
+</html>

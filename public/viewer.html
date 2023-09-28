@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <title>3D Optical Mapping</title>
+    
+    <script
+      async
+      src="https://cdn.jsdelivr.net/npm/es-module-shims@1.7.2/dist/es-module-shims.min.js"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-capture@2.1.1/dist/canvas-capture.min.js"></script>
+
+    
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "https://cdn.jsdelivr.net/npm/three@0.152.2/build/three.module.js",
+          "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.152.2/examples/jsm/"
+        }
+      }
+    </script>
+    <script type="module" crossorigin src="/3d-optical-mapping/assets/viewer-c3b283c2.js"></script>
+    <link rel="modulepreload" crossorigin href="/3d-optical-mapping/assets/modulepreload-polyfill-3cfb730f.js">
+    <link rel="stylesheet" href="/3d-optical-mapping/assets/viewer-3029082a.css">
+  </head>
+  <body>
+    <section id="loading-screen">
+      <div id="loader"></div>
+    </section>
+    <canvas id="frame"></canvas>
+    <div class="toolbar">
+      <div class="frame-counter">
+        <span id="frame-number"></span>
+      </div>
+      <div class="toolbar-controls">
+        <button id="playButton"></button>
+        <input type="range" min="0" max="150" value="0" id="timeline" />
+      </div>
+    </div>
+  </body>
+</html>
