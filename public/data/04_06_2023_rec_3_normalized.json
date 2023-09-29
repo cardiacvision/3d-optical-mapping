@@ -5,6 +5,6 @@
   "textures": {
     "Normalized": "texture"
   },
-  "ms_per_frame": 10,
+  "ms_per_frame": 2,
   "default_camera_pos": [-0.03519, 0.09711, 0.30507]
 }
